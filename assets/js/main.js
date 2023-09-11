@@ -1,48 +1,34 @@
-/*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+/*
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
-/*======MENU SHOW====*/
-/* Validate if constant exists  */
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    console.log("clicked");
-    navMenu.classList.add("show-menu");
-  });
-}
+(function($) {
 
-/*======MENU HIDDEN====*/
-/* Validate if constant exists  */
-if (navClose) {
-  navClose.addEventListener("click", () => {
-    console.log("clicked");
-    navMenu.classList.remove("show-menu");
-  });
-}
+	var	$window = $(window),
+		$body = $('body'),
+		$nav = $('#nav');
 
-/*=============== REMOVE MENU MOBILE ===============*/
+	// Breakpoints.
+		breakpoints({
+			xlarge:  [ '1281px',  '1680px' ],
+			large:   [ '981px',   '1280px' ],
+			medium:  [ '737px',   '980px'  ],
+			small:   [ null,      '736px'  ]
+		});
 
-const navLink = document.querySelectorAll('.nav__link');
+	// Play initial animations on page load.
+		$window.on('load', function() {
+			window.setTimeout(function() {
+				$body.removeClass('is-preload');
+			}, 100);
+		});
 
-const linkAction = () => {
-  const navMenu = document.getElementById('nav-menu');
-  navMenu.classList.remove('show-menu');
-}
-navLink.forEach(n => n.addEventListener('click', linkAction));
+	// Scrolly.
+		$('#nav a, .scrolly').scrolly({
+			speed: 1000,
+			offset: function() { return $nav.height(); }
+		});
 
-/*=============== SWIPER PROJECTS ===============*/
-
-/*=============== SWIPER TESTIMONIAL ===============*/
-
-/*=============== EMAIL JS ===============*/
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-/*=============== SHOW SCROLL UP ===============*/
-
-/*=============== DARK LIGHT THEME ===============*/
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+})(jQuery);

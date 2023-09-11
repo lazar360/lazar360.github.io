@@ -1,131 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE HTML>
+<html>
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.png"
-      type="image/x-icon"
-    />
-
-    <!--=============== REMIXICONS ===============-->
-    <link
+<head>
+	<title>Nicolas Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+	<link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+</head>
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+<body class="is-preload">
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="container">
+			<li><a href="#top">Home</a></li>
+			<li><a href="#work">Tech</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-    <title>Portfolio Nicolas Gautier</title>
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo"> Nicolas </a>
+	<!-- Home -->
+	<article id="top" class="wrapper style1">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-5-large col-12-medium">
+					<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+				</div>
+				<div class="col-8 col-7-large col-12-medium">
+					<header>
+						<h1>Hi. I'm <strong>Nicolas</strong>.</h1>
+					</header>
+					<p>
+						I'm a web developer <br>
+						Based in France, at Nantes <br>
+						And I love useful, well-built apps <br>
+					</p>
+					<a href="#work" class="button large scrolly">Learn about my favorite technologies</a>
+				</div>
+			</div>
+		</div>
+	</article>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link"
-                ><i class="ri-home-2-line"></i> Home</a
-              >
-            </li>
+	<!-- Work 1 -->
+	<article id="work" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>Here's my favorite technologies</h2>
+			</header>
+			<div class="row aln-center">
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<h3>Languages - Frameworks</h3>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164268629-b911879f-6d90-409f-b3ae-25f830de2f5f.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266579-062330f5-137d-4f73-8892-c20429b1456f.png">
+						<img width="16%" src="https://user-images.githubusercontent.com/91179295/217637050-a8b0caab-e660-46a0-9480-74faadefa89a.png">
+						<br>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164265959-4a53d1e1-2bbe-4e86-adc4-f633bcf345f8.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266044-6d359b71-2b6c-4dcb-8c64-41b3602c6d4d.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266155-856c54b9-9317-4fdd-ada4-f56e1b801dff.png">
+						<br>
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269081-77a872f7-8980-4412-bd80-ad53e9a63e3f.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269315-98b912be-091f-43af-b3ee-60ceb31c5749.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269386-930ee58c-ce2d-4def-ab0c-e2b90dd494a5.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269767-85710a94-5912-4231-924b-81274440bbd5.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269871-933e92ee-63a2-4b52-9da6-b10b15c70300.png">
+						<br>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164270164-70e2a8db-9757-4ff7-be22-8db80c123eae.png">
+					</section>
+				</div>
+				
+				<!-- <div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<h3>Development tools</h3>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164268629-b911879f-6d90-409f-b3ae-25f830de2f5f.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266579-062330f5-137d-4f73-8892-c20429b1456f.png">
+						<img width="16%" src="https://user-images.githubusercontent.com/91179295/217637050-a8b0caab-e660-46a0-9480-74faadefa89a.png">
+						<br>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164265959-4a53d1e1-2bbe-4e86-adc4-f633bcf345f8.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266044-6d359b71-2b6c-4dcb-8c64-41b3602c6d4d.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266155-856c54b9-9317-4fdd-ada4-f56e1b801dff.png">
+						<br>
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269081-77a872f7-8980-4412-bd80-ad53e9a63e3f.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269315-98b912be-091f-43af-b3ee-60ceb31c5749.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269386-930ee58c-ce2d-4def-ab0c-e2b90dd494a5.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269767-85710a94-5912-4231-924b-81274440bbd5.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269871-933e92ee-63a2-4b52-9da6-b10b15c70300.png">
+						<br>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164270164-70e2a8db-9757-4ff7-be22-8db80c123eae.png">
+					</section>
+				</div>
+				
+				
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<h3>Working methodologies</h3>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164268629-b911879f-6d90-409f-b3ae-25f830de2f5f.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266579-062330f5-137d-4f73-8892-c20429b1456f.png">
+						<img width="16%" src="https://user-images.githubusercontent.com/91179295/217637050-a8b0caab-e660-46a0-9480-74faadefa89a.png">
+						<br>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164265959-4a53d1e1-2bbe-4e86-adc4-f633bcf345f8.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266044-6d359b71-2b6c-4dcb-8c64-41b3602c6d4d.png">
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164266155-856c54b9-9317-4fdd-ada4-f56e1b801dff.png">
+						<br>
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269081-77a872f7-8980-4412-bd80-ad53e9a63e3f.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269315-98b912be-091f-43af-b3ee-60ceb31c5749.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269386-930ee58c-ce2d-4def-ab0c-e2b90dd494a5.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269767-85710a94-5912-4231-924b-81274440bbd5.png">
+						<img width="15%" src="https://user-images.githubusercontent.com/91179295/164269871-933e92ee-63a2-4b52-9da6-b10b15c70300.png">
+						<br>
+						<img width="20%" src="https://user-images.githubusercontent.com/91179295/164270164-70e2a8db-9757-4ff7-be22-8db80c123eae.png">
+					</section>
+				</div> -->
+			</div>
+			<footer>
+				<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+			</footer>
+		</div>
+	</article>
 
-            <li class="nav__item">
-              <a href="#skills" class="nav__link"
-                ><i class="ri-trophy-line"></i> Skills
-              </a>
-            </li>
+	<!-- Work 2 -->
+	
+	<!-- Portfolio -->
+	<article id="portfolio" class="wrapper style3">
+		<div class="container">
+			<header>
+				<h2>Here’s some stuff I made recently.</h2>
+			</header>
+			<div class="row">
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/lazar360/angular-ecommerce" class="image featured"><img src="https://github.com/lazar360/angular-ecommerce/assets/91179295/2f21fb0f-6f62-4a6f-83b5-eba8a2d013c5" alt="angular-ecommerce" /></a>
+						<h3><a href="https://github.com/lazar360/angular-ecommerce">angular-ecommerce</a></h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a style="padding-bottom:6px ;" href="https://github.com/lazar360/completejscourse-pig-game" class="image featured"><img src="https://user-images.githubusercontent.com/91179295/233983733-2bba2369-2d9b-45d0-b279-ebdbdcd290fe.gif" alt="Dice Game / JavaScript" /></a>
+						<h3><a href="https://github.com/lazar360/completejscourse-pig-game">Dice Game / JavaScript</a></h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/lazar360/parking-ui" class="image featured"><img src="https://user-images.githubusercontent.com/91179295/193883721-5cfdbada-871e-45ad-877c-be070b0e67bb.gif" alt="Parking Info / Java Angular" /></a>
+						<h3><a href="https://github.com/lazar360/parking-ui">Parking / Java Angular</a></h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/lazar360/employeemanagerAngular" class="image featured"><img src="https://user-images.githubusercontent.com/91179295/165254731-d9a41003-a018-4efb-b9ba-5ab12563b211.gif" alt="Employee Manager / Java + Angular" /></a>
+						<h3><a href="https://github.com/lazar360/employeemanagerAngular">Employee Manager / Java + Angular</a></h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/lazar360/petitsanimaux2" class="image featured"><img src="https://user-images.githubusercontent.com/91179295/184547631-f0a8ad4a-6858-4043-b7e4-2e8744b5999a.gif" alt="Petits Animaux 2 / PHP vanilla" /></a>
+						<h3><a href="https://github.com/lazar360/petitsanimaux2">Petits Animaux 2 / PHP vanilla</a></h3>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="https://github.com/lazar360/sitehero" class="image featured"><img src="https://user-images.githubusercontent.com/91179295/163849984-cfc6de28-c56f-4506-8ba6-77d693baff3f.gif" alt="Site Hero / ASP.Net Core" /></a>
+						<h3><a href="https://github.com/lazar360/sitehero">Site Hero / <br>ASP.Net Core</a></h3>
+					</article>
+				</div>
+			</div>
+			<footer>
+				<p>Visit my <a href="https://github.com/lazar360">Github page</a> for more stuff</p>
+				<a href="#contact" class="button large scrolly">Get in touch with me</a>
+			</footer>
+		</div>
+	</article>
 
-            <li class="nav__item">
-              <a href="#qualification" class="nav__link"
-                ><i class="ri-book-open-line"></i> Qualification
-              </a>
-            </li>
+	<!-- Contact -->
+	<article id="contact" class="wrapper style4">
+		<div class="container medium">
+			<header>
+				<h2>Have me make stuff for you.</h2>
+			</header>
+			<div class="row">
+				<div class="col-12">
+					<form method="post" action="#">
+						<div class="row">
+							<div class="col-6 col-12-small">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="col-6 col-12-small">
+								<input type="text" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="col-12">
+								<input type="text" name="subject" id="subject" placeholder="Subject" />
+							</div>
+							<div class="col-12">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="reset" value="Clear Form" class="alt" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-12">
+					<hr />
+					<h3>Find me on ...</h3>
+					<ul class="social">
+						<li><a href="https://www.linkedin.com/in/nicolasdevnantes" class="ri-linkedin-line"><span class="label"></span></a></li>
+						<li><a href="https://github.com/lazar360" class="ri-github-line"><span class="label"></span></a></li>
+						
+					</ul>
+					<hr />
+				</div>
+			</div>
+		</div>
+	</article>
 
-            <li class="nav__item">
-              <a href="#services" class="nav__link"
-                ><i class="ri-briefcase-2-line"></i> Services
-              </a>
-            </li>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
 
-            <li class="nav__item">
-              <a href="#projects" class="nav__link"
-                ><i class="ri-image-line"></i> Projects
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#contact" class="nav__link"
-                ><i class="ri-chat-3-line"></i> Contact
-              </a>
-            </li>
-          </ul>
-
-          <!-- Close button -->
-          <div class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
-          </div>
-        </div>
-
-        <div class="nav__buttons">
-          <!-- Theme change button -->
-          <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
-
-          <!-- Toggle button -->
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-menu-5-line"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!--==================== MAIN ====================-->
-    <main class="main">
-      <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
-
-      <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills"></section>
-
-      <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section" id="qualification"></section>
-
-      <!--==================== SERVICES ====================-->
-      <section class="services section" id="services"></section>
-
-      <!--==================== PROJECTS ====================-->
-      <section class="projects section" id="projects"></section>
-
-      <!--==================== TESTIMONIAL ====================-->
-      <section class="testimonial section"></section>
-
-      <!--==================== CONTACT ====================-->
-      <section class="contact section" id="contact"></section>
-    </main>
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
-
-    <!--========== SCROLL UP ==========-->
-
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
-
-    <!--=============== EMAIL JS ===============-->
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-  </body>
 </html>
